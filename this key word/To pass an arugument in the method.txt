@@ -1,0 +1,13 @@
+public class Main
+{    
+    void recall(Main obj){// this is refer to the current object
+        System.out.println("method event");
+    }
+    void call(){
+        recall(this);
+    }
+	public static void main(String[] args) {
+	    Main obj=new Main();
+	    obj.call();
+	}
+}

@@ -1,0 +1,29 @@
+public class Main
+{
+    String name;
+    String Id;
+    int marks;
+    int pass;
+    static String college="KRCE";
+     Main(String Id,String name,int marks){
+    this.Id=Id;
+    this.name=name;
+    this.marks=marks;
+    }
+    
+     Main(String Id,String name,int marks,int pass){
+    this(Id,name,marks);
+    this.pass=pass;
+        
+    }
+    void dispaly1(){
+       System.out.println("Name of student "+name+"\n"+"Marks "+marks+"\n"+"pass the test "+pass+"\n"+"college name "+college); 
+    }
+   
+	public static void main(String[] args) {
+		 Main student1 = new  Main("MEB1419","kishore",80,1);
+		 Main student2 = new  Main("MEB1401","Arun",45);
+		student1.dispaly1();
+		student2.dispaly1();
+	}
+}

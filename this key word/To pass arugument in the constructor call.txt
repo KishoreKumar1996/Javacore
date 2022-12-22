@@ -1,0 +1,20 @@
+class b{
+    Main a;
+    b(Main a){
+        this.a=a;
+    }
+    void meth(){
+        System.out.println(a.data);// using data member of Main class
+    }
+}
+public class Main
+{
+    int data=5;
+    Main(){
+        b bull=new b(this);
+        bull.meth();
+    }
+	public static void main(String[] args) {
+		Main a=new Main();
+	}
+}
